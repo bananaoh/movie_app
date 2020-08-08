@@ -1,0 +1,55 @@
+import React from 'react';
+import PropTypes from "prop-types";
+
+const foodILike = [
+  {
+    id: 1,
+    name: "Apple",
+    image: "https://i5.walmartimages.ca/images/Large/094/514/6000200094514.jpg",
+    rating: 4,
+  },
+  {
+    id: 2,
+    name: "Banana",
+    image: "https://cdn.mos.cms.futurecdn.net/42E9as7NaTaAi4A6JcuFwG-650-80.jpg.webp",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "PineApple",
+    image: "https://5.imimg.com/data5/WT/GN/ZH/SELLER-3722283/pineapple-500x500.jpg",
+    rating: 3.5,
+  },
+]
+
+function Food({name, picture, rating}) { // props.name = {name}
+  return (
+    <div>
+      <h3>I like {name}</h3>
+      <h4>{rating}/5.0</h4>
+      <img src={picture} alt={name}/>
+    </div>
+  );
+}
+
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
+  rating: PropTypes.number
+};
+
+function App() {
+  return (
+    <div>
+      {foodILike.map(dish => (
+        <Food 
+          key={dish.id} 
+          name={dish.name} 
+          picture={dish.image} 
+          rating={dish.rating}/>
+      ))}
+    </div>
+  );
+}
+
+export default App;

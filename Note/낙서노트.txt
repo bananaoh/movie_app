@@ -1,22 +1,15 @@
-Success! Created movie_app at C:\Main\React\movie_app
-Inside that directory, you can run several commands:
+나는 컴포넌트를 좋아하게 된다!
 
-  npm start
-    Starts the development server.
+component는 HTML을 반환하는 함수이다
+javascript와 HTML 사이의 이렇나 조합을 jsx라고 부름   -> react에만 있는 유일한 개념
 
-  npm run build
-    Bundles the app into static files for production.
 
-  npm test
-    Starts the test runner.
 
-  npm run eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
 
-We suggest that you begin by typing:
+영화  api
+https://github.com/serranoarevalo/yts-proxy
+https://yts.mx/api/v2/list_movies.json
 
-  cd movie_app
-  npm start
 
-Happy hacking!
+화살표 함수가 여려줄 -> {}
+화살표 함수가 한줄 -> (), return이 필요없음

@@ -1,0 +1,6 @@
+
+proptypes를 이용한 타입 체크
+https://reactjs-kr.firebaseapp.com/docs/typechecking-with-proptypes.html
+
+튜토리얼
+https://reactjs-kr.firebaseapp.com/tutorial/tutorial.html#wrapping-up
